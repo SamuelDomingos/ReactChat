@@ -1,0 +1,30 @@
+.button-menu {
+  all: initial;
+  position: absolute;
+  left: 1em;
+  top: 0.5em;
+  cursor: pointer;
+  background-color: #120f13;
+  padding: 0.5em;
+  border-radius: 50%;
+  display: none;
+  transition: 0.4s ease; /* Adiciona uma transição suave para a rotação */
+}
+
+.button-menu svg {
+  transition: transform 0.3s ease; /* Adiciona uma transição suave para a rotação */
+}
+
+.button-menu.open svg {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 830px) {
+  .button-menu {
+    display: inline-flex;
+  }
+
+  .button-menu.open{
+    left: 102%;
+  }
+}

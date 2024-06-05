@@ -1,0 +1,171 @@
+.Group{
+    width: 100%;
+    min-height: 100%;
+    background-color: #252329;
+    display: flex;
+    flex-direction: column;
+}
+
+.Group .dataGroup{
+    width: 100%;
+    border-bottom: 2px solid #1a181d;
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+}
+
+.dataGroup > svg{
+    font-size: 3em;
+    margin-right: 0.3em;
+}
+
+.dataGroup a{
+    margin-right: 1em;
+}
+    
+.dataGroup a svg{
+    font-size: 1.6em;
+}
+    
+.dataGroup img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.Group form{
+    width: 100%;
+    max-width: 500px;
+    margin:0 auto;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Group form > svg{
+  position: absolute;
+  left: -1.5em;
+  font-size: 1.8em;
+  cursor: pointer;
+  background-color: #2f80ed;
+  fill: #ccc;
+  padding: 0.1em;
+  border-radius: 0.2em;
+  }
+  
+  .Group form .container-emoji{
+  position: absolute;
+  bottom: 2em;
+  left: -2em;
+  }
+  
+  .Group form input[type=text]{
+    padding: 0.8em;
+    background-color: #3c393f;
+    outline: 0;
+    border: 0;
+    border-radius: 0.4em;
+  }
+  
+  .Group form button{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    padding: 0.5em;
+    background-color: #2f80ed;
+    border: 0;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Group .container-messages {
+    width: 100%;
+    height: 500px;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    overflow: auto;
+  }
+
+  
+  .Group .container-messages .sent{
+    margin-left: auto;
+  }
+
+  .container-messages .message-group{
+    display: flex;
+    margin: 1em 0;
+  }
+
+  .Group .messages{
+    border-radius: 0.2em;
+  }
+
+  .messages .sender-name{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .messages .sender-name h2{
+      margin-bottom: 0.5em;
+      font-size: 1.5em;
+  }
+
+  .Group .message-content-received{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .messages .message-time{
+    font-size: 0.8em;
+    text-align: right;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .sent .singleMess{
+    text-align: right;
+  }
+
+  .singleMess,
+  .message-time,
+  .sender-name {
+    background-color: #3c393f;
+    padding: 0.5em;
+  }
+  
+  .singleMess {
+    margin: 0.5em 0;
+    border-radius: 5px;
+  }
+  
+  .middleMessage {
+    border-radius: 0;
+  }
+  
+
+  .singleMess p{
+    font-size: 1em;
+  }
+
+  .message-group .received{
+    margin-right: auto;
+  }
+
+  .Group .message-content-received img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1em;
+  }
+
+  .Group .message-content-received svg.user-icon{
+    font-size: 3.3em;
+    margin-right: 0.2em;
+  }

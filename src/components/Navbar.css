@@ -1,0 +1,201 @@
+.navbar {
+    width: 100%;
+    height: 100vh;
+    background-color: #120f13;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease;
+    z-index: 999;
+  }
+
+.navbar .add-channels{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+    padding-bottom: 1em;
+}
+
+.navbar .add-channels > div{
+    display: flex;
+}
+
+.navbar .add-channels svg.add{
+    font-size: 1.5em;
+    border-radius: 0.2em;
+    background-color: #252329;
+    cursor: pointer;
+    color: #120f13;
+}
+
+  .navbar .notification-container {
+    position: relative;
+}
+  
+  .navbar .notification-container > svg.notification {
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+  
+  .navbar .notification-container .red-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px; /* Adicione largura e altura para a bolinha vermelha */
+    height: 10px;
+    background-color: #eb5757;
+    border-radius: 50%;
+}
+  
+.navbar .container-add{
+    position: absolute;
+    right: 1em;
+    top: 3em;
+    background-color: #252329;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.6em;
+    padding: 1em;
+}
+
+.navbar .container-add button{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    padding: 0.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container-add button:hover{
+    border-radius: 0.5em;
+    background-color: #3c393f;
+}
+
+.container-add button svg{
+    margin-right: 0.4em;
+    font-size: 1.5em;
+}
+
+.navbar .container-user{
+    margin-top: auto;
+    display: flex;
+    position: absolute;
+    bottom: 0;  /* Iguala ao valor do padding do .navbar para ignorar o padding */
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding: 0.8em 0.8em;
+    background-color: #0b090c;
+    cursor: pointer;
+}
+
+.navbar .container-user .user-info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }  
+
+.user-info h2{
+    font-size: 18px;
+}
+
+.container-user:hover{
+    background-color: #3c393f;
+}
+
+.container-user img.profile-image{
+    width: 50px;
+    height: 50px;
+    background-color: #252329;
+    padding: 1px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.container-user svg{
+    font-size: 35px;
+    margin-right: 0.5em;
+}
+
+.user-menu{
+    position: absolute;
+    right: 1em;
+    top: -7em;
+    background-color: #252329;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.6em;
+    padding: 1em;
+}
+
+.user-menu a{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.user-menu a:hover{
+    border-radius: 0.5em;
+    background-color: #3c393f;
+}
+
+.user-menu > button{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    padding: 0.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.user-menu > button.button-logout{
+    border-top: 1px solid #3c393f;
+    margin-top: 0.5em;
+    padding-top: 1em;
+}
+
+.user-menu > button.button-logout,
+.user-menu > button.button-logout svg{
+    color: #eb5757;
+    fill: #eb5757;
+}
+
+.user-menu > button:hover{
+    border-radius: 0.5em;
+    background-color: #3c393f;
+}
+
+.user-menu > button svg{
+    font-size: 1.3em;
+    margin-right: 0.5em;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 830px) {
+    .navbar {
+        left: -100%;
+        position: relative;
+    }    
+
+    .navbar.open {
+        left: 0;
+    }
+
+    .navbar .add-channels h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .navbar .add-channels {
+        flex-direction: column;
+    }    
+}

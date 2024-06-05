@@ -1,0 +1,70 @@
+.container-notifications{
+    position: relative;
+    background-color: #120f13;
+    padding: 1em 1.2em;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+.container-notifications button.button-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    background: none;
+    border: 0;
+}
+
+.container-notifications button.button-close svg{
+    font-size: 2em;
+}
+
+.container-user-received{
+    margin: 1em 0;
+}
+
+.container-notifications .user-received{
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    padding: 0.8em;
+}
+
+.user-received > svg.user-icon{
+    margin-right: 0.5em;
+    font-size: 2em;
+}
+
+.container-notifications .user-received img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1.5em;
+}
+
+.container-notifications .user-received h3{
+    margin-right: auto;
+}
+
+.container-notifications .user-received .buttons-functions svg{
+    cursor: pointer;
+    font-size: 2em;
+    padding: 1px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.container-notifications .user-received .buttons-functions svg:hover{
+    background-color: #3c393f;
+}
+
+.container-notifications .user-received svg.addFriend{
+    margin-left: auto;
+    fill: #32de84;
+}
+
+.container-notifications .user-received svg.block{
+    margin-left: 0.5em;
+    fill: #D2122E;
+}

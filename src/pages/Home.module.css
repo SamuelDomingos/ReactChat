@@ -1,0 +1,12 @@
+.home{
+    max-width: 100%;
+    background-color: #252329;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home img{
+    width: 50%;
+}

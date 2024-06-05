@@ -1,0 +1,197 @@
+.AddContainer{
+    position: relative;
+    margin: 0 auto;
+    background-color: #120f13;
+    border: 1px solid #fff;
+    padding: 1em 1.2em;
+    width: 50%;
+    height: 80%;
+    border-radius: 1em;
+}
+
+.AddContainer form .image-preview-container{
+    margin: 1em;
+}
+
+form > #img-name-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+form .image-preview-container img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    transition: 0.4s;
+}
+form .image-preview-container img:hover{
+    background-color: #e9e9e9;
+}
+
+form .image-preview-container svg{
+    font-size: 5em;
+    transition: 0.4s;
+    background-color: #e9e9e9;
+    fill: #000;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+form .image-preview-container svg:hover{
+    background-color: #000;
+    fill: #e9e9e9;
+}
+
+.AddContainer form input{
+    background-color: #3c393f;
+    text-decoration: none;
+    padding: 0.8em;
+    border-radius: 0.6em;
+    margin: 0.5em 0;
+}
+
+.AddContainer form input[type=submit]{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 1vw;
+    cursor: pointer;
+    border: 2px solid #b6b6b6;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #030d16;
+    padding: 10px 10px;
+    transition: 0.3s;
+}
+
+.AddContainer form input[type=submit]:hover{
+    background-color: #05101a;
+}
+
+.AddContainer button.button-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    background: none;
+    border: 0;
+}
+
+.AddContainer button.button-close svg{
+    font-size: 2em;
+}
+
+.AddContainer .listResults{
+    margin-top: 1.5em;
+    border-top: 1px solid #3c393f;
+    padding: 1em 0;
+}
+
+.listResults button.result-user{
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 1em;
+}
+
+.listResults button.result-user:disabled{
+    filter: brightness(0.70)
+}
+
+.listResults button.result-user:hover{
+    background-color: #3c393f;
+}
+
+.listResults button.result-user img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.listResults button.result-user p {
+    font-size: 1.5em;
+    margin-right: auto;
+}
+
+.listResults button.result-user svg {
+    font-size: 2.5em;
+    margin-left: auto;
+}
+
+.listResults button.result-user svg.friend{
+    fill: #32de84;
+}
+
+.listResults button.result-user svg.existsrequest{
+    fill: #ffff00;
+}
+
+.addgroup .containerToggleFriend{
+    margin: 1em 0;
+}
+
+.addgroup .containerToggleFriend > h2{
+    margin-bottom: 1em;
+}
+
+.addgroup .containerToggleFriend .containar-scroll{
+    height: 150px;
+    overflow: auto;
+}
+
+.addgroup .toggleFriend{
+    width: 90%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    margin: 1em auto;
+    border-radius: 0.4em;
+    transition: 0.4s;
+}
+
+.addgroup .toggleFriend:hover{
+    background-color: #3C393F;
+}
+
+.addgroup .toggleFriend img,
+.addgroup .toggleFriend > svg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.addgroup .selected{
+    background-color: #32de8593;
+    position: relative;
+    cursor:auto;
+}
+
+.addgroup .selected:hover{
+    background-color: #32de8593;
+}
+
+.selected .remove-button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.selected .remove-button svg{
+    font-size: 2.5em;
+    fill: #eb5757;
+    background-color: #120f13;
+    border-radius: 50%;
+}

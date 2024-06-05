@@ -1,0 +1,22 @@
+.blockFriend{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #252329;
+    border-radius: 5px;
+}
+
+.container-buttons{
+    margin: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockFriend h2{
+    font-size: 1.3em;
+}

@@ -1,0 +1,68 @@
+.auth{
+    margin:  0 auto;
+    margin-top: 10vh;
+    text-align: center;
+    background-color: #060c11;
+    border: 2px solid #fff;
+    max-width: 33%;
+    padding: 1vw;
+}
+
+.auth h2{
+    font-size: 30px;
+}
+
+.auth p{
+    margin-top: 10px;
+    font-size: 21px;
+}
+
+.auth-Form{
+    margin: 3vh auto;
+    padding: 2vw 1vw;
+    border-radius: 5px;
+}
+
+.auth-Form input{
+    border: 2px solid #b6b6b6;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #030d16;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 1.5vw;
+    
+}
+
+.auth-Form input:focus{
+    border: 2px solid #e9e9e9;
+    outline: 0;
+}
+
+.auth-Form input[type=submit]{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1vw;
+    cursor: pointer;
+}
+
+.auth-Form input[type=submit]:hover{
+    border: 2px solid #e9e9e9;
+}
+
+.auth > p{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 780px) {
+    .auth{
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .auth{
+        padding: 2vw;
+        max-width: 90%;
+    }
+}

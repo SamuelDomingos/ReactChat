@@ -1,0 +1,138 @@
+.FriendProfile{
+  width: 100%;
+  min-height: 100%;
+  background-color: #252329;
+  display: flex;
+  flex-direction: column;
+}
+
+.FriendProfile p.textBlocked{
+  background-color: #49464d;
+  max-width: max-content;
+  padding: 1em;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-bottom: 1.6em;
+}
+
+.FriendProfile .dataFriend{
+  width: 100%;
+  border-bottom: 2px solid #1a181d;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+}
+
+.FriendProfile .dataFriend svg.user-icon{
+font-size: 3em;
+margin-right: 0.3em;
+}
+
+.dataFriend a{
+margin-right: 1em;
+}
+
+.dataFriend a svg{
+font-size: 1.6em;
+}
+
+.dataFriend img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.FriendProfile form{
+  width: 500px;
+  margin:0 auto;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.FriendProfile form > svg{
+position: absolute;
+left: -1.5em;
+font-size: 1.8em;
+cursor: pointer;
+background-color: #2f80ed;
+fill: #ccc;
+padding: 0.1em;
+border-radius: 0.2em;
+}
+
+.FriendProfile form .container-emoji{
+position: absolute;
+bottom: 2em;
+left: -2em;
+}
+
+.FriendProfile form input[type=text]{
+  padding: 0.8em;
+  background-color: #3c393f;
+  outline: 0;
+  border: 0;
+  border-radius: 0.4em;
+}
+
+.FriendProfile form button{
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  padding: 0.5em;
+  background-color: #2f80ed;
+  border: 0;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-messages {
+  width: 100%;
+  height: 500px;
+  padding: 0 4em;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  overflow: auto;
+}
+
+.sentMessages,
+.receivedMessages {
+  display: flex;
+  flex-direction: column;
+}
+
+.FriendProfile .singleSentMess {
+  align-self: flex-end;
+}
+
+.FriendProfile .singleReceivedMess {
+  align-self: flex-start;
+}
+
+.FriendProfile .singleSentMess,
+.singleReceivedMess{
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  max-width: 400px;
+}
+
+.FriendProfile .singleSentMess p{
+  margin-left: auto;
+}
+
+.FriendProfile .singleSentMess h2{
+  margin-left: auto;
+}
+
+.singleSentMess h2,
+.singleReceivedMess h2{
+  font-size: 19px;
+  margin-top: 0.3em;
+}

@@ -1,0 +1,64 @@
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.button-navbar-container {
+  width: 30%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+button.toggle {
+  all: unset;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 8px;
+  display: flex;
+  border-radius: 50%;
+  background-color: #3c393f;
+  transition: 0.3s;
+}
+
+.container-toggle {
+  margin-left: auto;
+  position: relative;
+}
+
+.container-toggle button.toggle:hover {
+  background-color: #49464d;
+}
+
+button.toggle svg {
+  font-size: 1.2em;
+}
+
+.container-toggle > div {
+  position: absolute;
+  width: 150px;
+  top: 15px;
+  right: 20px;
+  border-radius: 7px;
+  padding: 0.8em;
+  background-color: #1a181d;
+}
+
+.container-toggle > div button {
+  all: unset;
+  cursor: pointer;
+  width: 90%;
+  padding: 0.5em;
+  border-radius: 7px;
+}
+
+.container-toggle > div button:hover {
+  background-color: #252329;
+}
+
+@media screen and (max-width: 830px) {
+  .button-navbar-container {
+    width: 35%;
+    position: absolute;
+  }
+}

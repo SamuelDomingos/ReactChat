@@ -1,0 +1,75 @@
+.profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    min-height: 500px;
+    background-color: #120f13;
+}
+
+.user-Form{
+    margin: 3vh 1vw;
+    padding: 2vw 0;
+    border-radius: 5px;
+}
+
+.user-Form input{
+    border: 2px solid #b6b6b6;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #030d16;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 1.5vw;
+    
+}
+
+.user-Form label{
+    margin-bottom: 0.5em;
+}
+
+.user-Form label img.profile-image{
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.user-Form input:disabled{
+    filter: brightness(0.70)
+}
+
+.user-Form input:focus{
+    border: 2px solid #e9e9e9;
+    outline: 0;
+}
+
+.user-Form input[type=submit]{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1vw;
+    cursor: pointer;
+}
+
+.user-Form .user-icon{
+    cursor: pointer;
+    background-color: #252329;
+    border-radius: 50%;
+    padding: 9px;
+    margin: 0 auto;
+    font-size: 120px;
+    margin-bottom: 0.4em;
+    transition: 0.2s;
+}
+
+.user-Form .user-icon:hover{
+    background-color: #2e2c33;
+}
